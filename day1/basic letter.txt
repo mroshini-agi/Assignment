@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>marking letters</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <p>
+      <i
+        ><strong>Lorem Ipsum</strong><br />
+        Lorem ipsum dolor sit amet,<br />
+        consectetur adipiscing elit<br />
+        uk</i
+      >
+    </p>
+    <h2>Re:Integer sed diam ac leo aliquet semper.</h2>
+    <p>Dear lorem,</p>
+    <p>
+      Duis pulvinar diam in tempus fringilla. Pellentesque vestibulum blandit
+      ipsum. Sed sagittis ac arcu vitae rhoncus. Nulla facilisi. Fusce iaculis
+      venenatis elit. Donec facilisis faucibus sodales.
+    </p>
+    <h3>Nullam id vulputate odio</h3>
+    <p>
+      Vestibulum a mauris quis sapien semper porttitor quis sed sem Mauris mi
+      felis, malesuada a turpis eget, interdum sollicitudin magna.
+    </p>
+    <ul>
+      <li>Aenean ut mi volutpat</li>
+      <li>viverra justo eget</li>
+      <li>imperdiet dolor</li>
+    </ul>
+    <p>
+      Nunc placerat turpis diam, non ultrices nisl consequat consequat.<br /><br />
+      Mauris quis orci mauris. Nulla sed facilisis augue
+    </p>
+    <h3>nec interdum tellus</h3>
+    <ol>
+      <li>Proin convallis pellentesque</li>
+      <li>nisi eget imperdiet</li>
+      <li>Pellentesque suscipit</li>
+    </ol>
+    <p>
+      Aenean egestas quam id vehicula vehicula. Integer non finibus purus. Nam
+      scelerisque magna ut leo semper, id viverra nisi rutrum.
+    </p>
+    <p>Yours sincerely,</p>
+    <p>Roshini</p>
+  </body>
+</html>

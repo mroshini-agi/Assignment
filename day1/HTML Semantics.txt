@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>html sematics</title>
+  </head>
+  <body>
+    <header>
+      <h2>WELCOME TO HTML SEMATICS</h2>
+    </header>
+    <main>
+      <nav>
+        <ul>
+          <li><a href="#">header</a></li>
+          <li>section</li>
+        </ul>
+      </nav>
+      <section>
+        <h3>HTML</h3>
+        <p>
+          Hypertext Markup Language, a standardized system for tagging text
+          files to achieve font, colour, graphic, and hyperlink effects on World
+          Wide Web pages.
+        </p>
+      </section>
+      <article>
+        <h2>CSS</h2>
+        <p>
+          CSS stands for Cascading Style Sheets. It is a style sheet language
+          which is used to describe the look and formatting of a document
+          written in markup language. It provides an additional feature to HTML.
+        </p>
+      </article>
+    </main>
+    <footer>
+      <p>Copyright 2021. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
