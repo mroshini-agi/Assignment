@@ -1,0 +1,208 @@
+package javademo;
+import java.util.Scanner;
+
+public class test {
+	public static void main(String a[]) {
+	
+        int num = 10;
+        if (num % 2 == 0) {
+ 
+            
+            System.out.println("Entered Number is Even");
+        }
+ 
+        else {
+ 
+            
+            System.out.println("Entered Number is Odd");
+        }
+    }
+}
+-------------------------------------------------------positive or negative----------------------------------------------------------------------------------
+package javademo;
+import java.util.Scanner;
+
+public class test {
+	public static void main(String a[]) {
+	
+		 int num;
+	      System.out.println("Enter a number ::");
+	      Scanner sc = new Scanner(System.in);
+	      num = sc.nextInt();
+
+	      if (num > 0){
+	         System.out.println("Given number is a positive integer");
+	      } else if(num < 0){
+	         System.out.println("Given number is a negative integer");
+	      } else {
+	         System.out.println("Given number is neither positive nor negative integer");
+	      }
+	   }
+	}
+------------------------------------------------------greatest of 3 numbers---------------------------------------------------------------------------------------
+package javademo;
+import java.util.Scanner;
+
+public class test {
+	public static void main(String a[]) {
+	
+		 int num1,num2,num3;
+         Scanner sc=new Scanner(System.in);
+	      System.out.println("Enter three numbers:");
+         num1=sc.nextInt();
+         num2=sc.nextInt();
+         num3=sc.nextInt();
+            if((num1 > num2) && (num1 > num3))
+	            {
+		          System.out.println("The Greatest Is "+num1);
+	            }
+	         else if(num2 > num3)
+	            {
+		          System.out.println("The Greatest Is "+num2);
+	            }
+	         else
+	            {
+		          System.out.println("The Greatest Is "+num3);
+	            }	
+      }
+	
+}
+-----------------------------------------------grades of 3 students a,b,c-----------------------------------------------------------
+package javademo;
+import java.util.Scanner;
+
+public class test {
+	public static void main(String a[]) {
+	
+		 int marks=450; //total marks =500  
+	        if(marks>=400)
+	            System.out.print("A grade");
+	        else if(marks<400 && marks>=300)
+	            System.out.print("B grade");
+	        else if (marks<300 && marks>=250)
+	            System.out.print("c grade");
+	        else
+	            System.out.print("failed!!");
+	    }
+
+	}
+-------------------------------------------------call bill-------------------------------------------------------
+package javademo;
+import java.util.Scanner;
+
+public class test {
+	public static void main(String a[]) {
+		int totalCalls=500;
+		if(totalCalls<=100)
+		System.out.println("call is free");
+		else if(totalCalls>=101 && totalCalls<=200)
+		System.out.println("Rs 1 per call and the bill is"+totalCalls*1);
+		else if(totalCalls>=201 && totalCalls<=300)
+		System.out.println("Rs 2 per call and the bill is"+totalCalls*2);
+		else
+		System.out.println("Rs 3 per call and the bill is"+totalCalls*3);
+		}
+	}
+----------------------------------------------------------------------------------------------------------------------
+System.out.println("6) generate bill of calls");
+int calls=300;
+if(calls<=100) {
+System.out.println("first 100 calls are free");
+}
+else if(calls>=101 && calls<=200) {
+System.out.println("101 t0 200 calls cost rs1");
+}
+else if(calls>=201 && calls<=300) {
+System.out.println("201 t0 300 calls cost rs2");
+}
+else{
+System.out.println("300+ calls cost rs3");
+}
+--------------------------------------------------------facotrial-------------------------------------------------------
+package javademo;
+import java.util.Scanner;
+
+public class test {
+	static int factorial(int n)
+    {
+        if (n == 0)
+          return 1;
+          
+        return n*factorial(n-1);
+    }
+      
+    // Driver method
+    public static void main(String[] args) 
+    {
+        int num = 5;
+        System.out.println("Factorial of "+ num + " is " + factorial(5));
+    }
+}
+---------------------------------------odd or even----------------------------------------------------------
+package javademo;
+import java.util.Scanner;
+
+public class test {
+	 public static void main(String[] args)
+	    {
+	        int n = 8;
+	        int evenSum = 0;
+	        int oddSum = 0;
+	  
+	        for (int i = 1; i <= 2 * n; i++) {
+	            
+	            if ((i & 1) == 0)
+	                evenSum += i;
+	            else
+	                oddSum += i;
+	        }
+	       
+	        System.out.println("Sum of First " + n
+	                           + " Even numbers = " + evenSum);
+	  
+	      
+	        System.out.println("Sum of First " + n
+	                           + " Odd numbers = " + oddSum);
+	    }
+	}
+-----------------------------------------------------pattern matching-------------------------
+package javademo;
+
+import java.util.Scanner;
+
+public class test {
+	public static void main(String[] args) {
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j <= i; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+}
+------------------------------------------------------------------------------------------------------
+  public static void main(String aa[])
+    {
+    int calls=290; // 190= 100+180
+    if(calls<=100)
+    {
+        System.out.println("Bill : Rs.0");
+    }
+    else if(calls>100 && calls<=200)
+    {
+        calls=calls-100;
+        System.out.println(calls);
+    }
+    else if(calls>200 && calls<=300)
+    {
+        calls=(calls-200)*2+100;
+        System.out.println(calls);
+    }
+    else {
+        calls=(calls-300)*3+300;
+        System.out.print(calls);
+    }
+   
+}
+}
+------------------------------------------------------------------------------------------------------

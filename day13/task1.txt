@@ -1,0 +1,77 @@
+package javademo;
+
+public class test {
+	public static void main(String a[]) {
+		String name="Rachana",technology="java";
+		int age=23;
+		System.out.println("Details-----");
+		System.out.println("My name is "+name+"\n I am learning java" +technology);
+		}
+
+}
+------------------------------------------------------Area of the circle------------------------------------------
+package javademo;
+import java.util.Scanner;
+
+public class test {
+	public static void main(String a[]) {
+		Scanner s= new Scanner(System.in);
+        
+        System.out.println("Enter the radius:");
+        double r= s.nextDouble();
+        double  area=(22*r*r)/7 ;
+        System.out.println("Area of Circle is: " + area); 
+		}
+
+}
+
+--------------------------------------------------------Area of the Square-----------------------------------------------
+package javademo;
+import java.util.Scanner;
+
+public class test {
+	public static void main(String a[]) {
+		int length, area;
+	      Scanner sc = new Scanner(System.in);
+	      System.out.println("Enter the length of the square ::");
+	      length = sc.nextInt();
+	      area = length* length;
+	      System.out.println("Area of the square is ::"+area);
+		}
+
+}
+----------------------------------------------------------Area of rectangle-----------------------------------------------
+
+
+
+package javademo;
+import java.util.Scanner;
+
+public class test {
+	public static void main(String a[]) {
+		 Scanner s= new Scanner(System.in);
+	        
+         System.out.println("Enter the length:");
+         double l= s.nextDouble();
+        System.out.println("Enter the breadth:");
+         double b= s.nextDouble();
+        
+          
+          double  area=l*b;
+      System.out.println("Area of Rectangle is: " + area); 
+		}
+
+}
+-------------------------------------------------------simple interest------------------------------------------------------
+package javademo;
+import java.util.Scanner;
+
+public class test {
+	public static void main(String a[]) {
+		 float P = 1, R = 1, T = 1;
+		 float SI = (P * T * R) / 100;
+	        System.out.println("Simple interest = " + SI);
+		}
+
+}
+
