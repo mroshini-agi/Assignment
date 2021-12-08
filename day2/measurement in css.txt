@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>styling</title>
+    <link rel="stylesheet" href="style.css"/ >
+  </head>
+  <body>
+    <div class="box">
+      <div class="boxTow"></div>
+    </div>
+    <div class="one"></div>
+  </body>
+</html>
+
+
+-------------------------------------
+
+style.css
+
+.box {
+  width: 100%;
+  height: 500px;
+  background-color: violet;
+}
+.boxTow {
+  width: 30vw;
+  height: 30rem;
+  background-color: rgb(128, 127, 199);
+}
+.one {
+  width: 50vw;
+  height: 50vh;
+  background-color: rgb(69, 212, 193);
+}
