@@ -1,0 +1,92 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  template: `
+  <div class="container">
+  <h2>Employe Intrest Survey Form</h2>
+  <form>
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Enter Your Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Enter your Department</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Tell us Littel About Yourself</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <br>
+  <p>How do you like to read about your favorite topic?<p>
+  <div class="row">
+    <div class="col-76">
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+      <label for="vehicle1"> Books</label><br>
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+      <label for="vehicle2"> online resorce</label><br>
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+      <label for="vehicle3">phone app</label><br>
+      <input type="checkbox" id="vehicle4" name="vhicle4" value="ship">
+      <label for="vehicle3">magazines</label><br>
+    </div>
+    <div class="row">
+    <div class="col-25">
+      <label for="country">what genre of movie do you like?</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country">
+        <option value="australia">comedy</option>
+        <option value="canada">horor</option>
+        <option value="usa">romcom</option>
+      </select>
+    </div>
+  </div>
+
+  </div>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>`,
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  getName(){
+    console.log("clicked");
+  }
+  getN(){
+    console.log("keyup");
+  }
+  getdown(){
+    console.log("keydown");
+  }
+  eventCallFunction(eventName:string){  
+    console.log(eventName +" is called ...")  
+  } 
+  name="Roshini"
+  disablebox=true
+  enableInput(){
+  this.disablebox=false
+  }
+  pholder="enter first name"
+  changepholder(){
+  this.pholder="enter last name"
+  }
+  
+
+}
