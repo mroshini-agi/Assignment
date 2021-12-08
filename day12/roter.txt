@@ -1,0 +1,107 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { LandingComponent } from './landing/landing.component';
+import { ProductsComponent } from './products/products.component';
+import { LaptopComponent } from './laptop/laptop.component';
+import { ErorComponent } from './eror/eror.component';
+import { MobileComponent } from './mobile/mobile.component';
+import { RouterModule } from '@angular/router';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    AboutComponent,
+    ContactComponent,
+    LandingComponent,
+    ProductsComponent,
+    LaptopComponent,
+    ErorComponent,
+    MobileComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    RouterModule,
+    
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+--------------------------------------------------------------------------------------
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from './home/home.component';
+import { LaptopComponent } from './laptop/laptop.component';
+import { MobileComponent } from './mobile/mobile.component';
+import { ProductsComponent } from './products/products.component';
+
+const routes: Routes = [
+
+  {path:'home',component:HomeComponent},
+  {path:'about',component:AboutComponent},
+  {path:'contact',component:ContactComponent},
+  {path:'products',component:ProductsComponent,children:[
+    {path:'mobile',component:MobileComponent},
+    {path:'laptop',component:LaptopComponent}
+  ]},
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
+------------------------------------------------------------------------------------------------------
+<nav class="navbar">
+  <div><a href=""routerLink="/home">Home</a></div>
+  <div><a href=""routerLink="/about">About</a></div>
+  <div><a href=""routerLink="/contact">Contact</a></div>
+</nav>
+<p class="txtcenter">Center aligned text on all viewport sizes</p>
+<div class="product-list">
+    <div class="card" style="width:18rem;">
+        <img src="../products/iphone.jpg" class="card=img-top" alt="phone">
+        <div class="card body">
+            <h5 class="card-title">Mobile Phone</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. </p>
+            <a href=""routerLink="mobile" class="btn btn-primary">Buy Now</a>
+        </div>
+    </div> 
+    <div class="card" style="width:18rem;">
+        <img src="../products/iphone.jpg" class="card=img-top" alt="phone">
+        <div class="card body">
+            <h5 class="card-title">Mobile Phone</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. </p>
+            <a href=""routerLink="mobile" class="btn btn-primary">Buy Now</a>
+        </div>
+    </div> 
+    <div class="">
+        <router-outlet></router-outlet>
+      </div>
+   
+
+</div>
+---------------------------------------------------------------------------------------------------------
+.navbar{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar a{
+    text-decoration: none;
+}
+.product-list{
+    display: flex;
+    justify-content: space-evenly;
+}
