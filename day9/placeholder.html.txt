@@ -1,0 +1,66 @@
+<h1>hiii</h1>
+<h3>click event</h3>
+<button (click)="getName()">click Me</button>
+<h3>keyup event</h3>
+<input type="text" (keyup)="getN()"/>
+<h3>keydown event</h3>
+<input type="text" (keydown)="getdown()"/>
+<h3>double clickevent</h3>
+<button (dblclick)="eventCallFunction('Button Double Click ')">click here</button>
+<h1>---------------------------------------------------------------------</h1>
+
+
+
+<input type="text" [value]="name" [disabled]="disablebox">
+<button (click)="enableInput()">click here</button>
+<h1>---------------------------------------------------------------------</h1>
+
+
+
+<input type="text" [placeholder]="pholder">
+<button (click)="changeppholder()">click me</button>
+
+-----------------------------------
+
+import { Component } from '@angular/core';
+
+
+
+@Component({
+selector: 'app-root',
+templateUrl: './app.component.html',
+styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+title = 'mypro';
+
+
+
+getName(){
+console.log("clicked");
+}
+getN(){
+console.log("keyup");
+}
+getdown(){
+console.log("keydown");
+}
+
+
+
+eventCallFunction(eventName:string){
+console.log(eventName +" is called ...")
+}
+name="Rachana"
+disablebox=true
+enableInput(){
+this.disablebox=false
+}
+pholder="enter first name"
+changepholder(){
+this.pholder="enter last name"
+}
+
+
+
+}
