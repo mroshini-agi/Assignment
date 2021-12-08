@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h3>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </h3>
+    <div>
+      <h1>hiya!</h1>
+      <h1>hiya!</h1>
+      <h2>hello</h2>
+    </div>
+    <div>
+      <h1>hello</h1>
+      <h2>Lorem Ipsum</h2>
+    </div>
+    <div>since the 1500s</div>
+    <p>Contrary to popular belief, Lorem Ipsum is not simply random text</p>
+    <ul>
+      <li>
+        Richard McClintock, a Latin professor at Hampden-Sydney College in
+        Virginia,
+      </li>
+      <li>looked up one of the more obscure Latin words, consectetur,</li>
+    </ul>
+    <div class="">
+      from a Lorem Ipsum passage, and going through the cites of the word in
+      classical literature, discovered the undoubtable source.
+    </div>
+    <h1>Where can I get some?</h1>
+    <div class="my">or randomised words which don't look even slightly</div>
+    <div class="one">
+      There are many variations of passages of Lorem Ipsum available, but the
+      majority have suffered alteration in some form, by injected humour,
+    </div>
+    <div class="two">
+      If you are going to use a passage of Lorem Ipsum, you need to be sure
+      there isn't anything embarrassing hidden in the middle of text.
+    </div>
+    <a href="#">class</a>
+  </body>
+</html>
+
+
+-------------------------------
+
+style.css
+
+
+h3 {
+  color: blue;
+}
+div h1 {
+  color: burlywood;
+}
+div + p {
+  color: aqua;
+}
+ul > li {
+  color: royalblue;
+}
+div ~ h1 {
+  color: blue;
+}
+[class="my"] {
+  color: darkcyan;
+}
+.one,
+.two {
+  background-color: bisque;
+}
+a:focus {
+  color: #ff0000;
+}
+p:hover,
+h1:hover,
+a:hover {
+  background-color: yellow;
+}
+h2::first-letter {
+  color: blue;
+}
