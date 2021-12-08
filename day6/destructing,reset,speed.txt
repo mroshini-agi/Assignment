@@ -1,0 +1,50 @@
+const person ={
+    firstName:"Roshini",
+    LastName:"M",
+    weight:66,
+    height:6
+};
+const{firstName,height}=person;
+console.log(`my name is ${firstName} and height is ${height}`);
+
+const add=(...args)=>{
+    let result=0;
+    for(let arg of args)result +=arg;
+    return console.log(result);
+};
+add(2,4)
+
+const one=[1,2,3]
+const two=[...one,4,5,6];
+console.log(two);
+
+----------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js"></script>
+</body>
+</html>
+
+-----------------
+
+const pi=3.14;
+function changeName(){
+    const pi=22;
+    console.log(pi);
+}
+changeName();
+console.log(pi);
+
+
+let firstName="Roshini";
+let lastName="M";
+console.log(`The name is: ${firstName} ${lastName}`);
+
