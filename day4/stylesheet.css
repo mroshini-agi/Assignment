@@ -1,0 +1,13 @@
+.navtab{
+    display: flex;
+    background-color: gainsboro;
+    padding: 20px;
+}
+.logo{
+    align-items: center;
+    width: 700px;
+    display: flex;
+    background-color: gainsboro;
+    justify-content: space-around;
+}
+
