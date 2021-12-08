@@ -1,0 +1,8 @@
+h1 style="color: brown;">hello</h1>
+<h1 [ngStyle]="{'color':'yellow'}">hii</h1>
+<h1 [ngStyle]="{'color':textColor}">rosh</h1>
+<h1 [ngStyle]="{'background-color':bgColor==='black'?'black':'gray'}">hi!!!</h1>
+
+
+<h1 [ngClass]="'changeColor'">hello</h1>
+<h1 [ngClass]="styleColor">helloooo</h1>
